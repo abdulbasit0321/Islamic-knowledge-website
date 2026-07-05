@@ -1,0 +1,1201 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The World of Islam</title>
+<link rel="icon" href="https://cdn.corenexis.com/f/2xB1IDuu7uV.png">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* Welcome Page */
+#welcome{
+    height:100vh;
+    background:url("https://images.unsplash.com/photo-1564769625905-50e93615e769?q=80&w=1200&auto=format&fit=crop") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.welcome-box{
+    background:rgba(0,0,0,0.6);
+    color:white;
+    text-align:center;
+    padding:40px;
+    border-radius:15px;
+}
+
+.welcome-box h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.welcome-box p{
+    margin-bottom:20px;
+}
+
+.btn{
+    text-decoration:none;
+    background:darkgreen;
+    color:white;
+    padding:12px 25px;
+    border-radius:5px;
+}
+
+/* About Page */
+#about{
+    min-height:100vh;
+    background:url("https://images.unsplash.com/photo-1512632578888-169bbbc64f33?q=80&w=1200&auto=format&fit=crop") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.about-box{
+    background:rgba(0,0,0,0.6);
+    color:white;
+    max-width:900px;
+    padding:30px;
+    border-radius:15px;
+}
+
+.about-box h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.about-box p{
+    line-height:1.8;
+}
+#pillars{
+    padding: 50px;
+    text-align: center;
+
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url("https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=1200&q=80");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+.pillar{
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(5px);
+    margin: 15px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+    color: white;
+}
+
+.pillar h2{
+    color: #ffd700;
+}
+#holy-books{
+    padding: 60px 20px;
+
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url("https://cdn.corenexis.com/f/M3cdkTMhZgf.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+#holy-books h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.book{
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+
+    background: rgba(255,255,255,0.12);
+    border-radius: 15px;
+
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.book h2{
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+.book p{
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+#prophets{
+    padding:60px 20px;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url("https://cdn.corenexis.com/f/w36gWuPSTie.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    color:white;
+}
+
+#prophets h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.prophet{
+    max-width:900px;
+    margin:20px auto;
+    padding:20px;
+    background:rgba(255,255,255,0.12);
+    border-radius:12px;
+}
+
+.prophet h2{
+    color:#ffd700;
+    margin-bottom:10px;
+}
+
+.prophet p{
+    line-height:1.8;
+}
+#places{
+    padding: 60px 20px;
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url("https://cdn.corenexis.com/f/cB4h8qux3E2.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+#places h1{
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.intro{
+    max-width: 900px;
+    margin: 0 auto 40px;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.place{
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.place h2{
+    color: #FFD700;
+    margin-bottom: 15px;
+}
+
+.place img{
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 12px;
+}
+
+.place p{
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+#festivals{
+    padding: 60px 20px;
+
+    background: linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
+    ),
+    url("https://images.unsplash.com/photo-1778912125820-af7bb90950d2?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+#festivals h1{
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 35px;
+}
+
+.festival{
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 25px;
+
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(5px);
+
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.festival h2{
+    color: #FFD700;
+    margin-bottom: 12px;
+}
+
+.festival p{
+    color: white;
+    line-height: 1.8;
+    text-align: justify;
+}
+/* Islamic Months Section */
+
+#months{
+    padding: 60px 20px;
+
+    background: linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
+    ),
+    url("https://images.unsplash.com/photo-1633793383807-d2e6c27b21ce?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+#months h1{
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 35px;
+}
+
+.month{
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 25px;
+
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(5px);
+
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.month h2{
+    color: #FFD700;
+    margin-bottom: 12px;
+}
+
+.month p{
+    color: white;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+#quotes{
+    padding: 60px 20px;
+
+    background: linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
+    ),
+    url("https://images.unsplash.com/photo-1587617425953-9075d28b8c46?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+#quotes h1{
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 35px;
+}
+
+.quote{
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 25px;
+
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(5px);
+
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+
+    text-align: center;
+}
+
+.quote p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: white;
+}
+
+.quote b{
+    color: #FFD700;
+}
+#footer{
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+
+    background: linear-gradient(
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75)
+    ),
+    url("https://cdn.corenexis.com/f/cB4h8qux3E2.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#footer h3{
+    color: #FFD700;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+#footer p{
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.8;
+}
+#thankyou{
+    padding: 70px 20px;
+    text-align: center;
+
+    background: linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
+    ),
+    url("https://cdn.corenexis.com/f/cB4h8qux3E2.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+#thankyou h1{
+    color: #FFD700;
+    margin-bottom: 20px;
+    font-size: 42px;
+}
+
+#thankyou p{
+    max-width: 900px;
+    margin: 15px auto;
+    line-height: 1.9;
+    font-size: 18px;
+}
+
+#thankyou h2{
+    color: #FFD700;
+    margin-top: 25px;
+    font-size: 32px;
+}
+#reviews{
+    padding: 60px 20px;
+    text-align: center;
+
+    background: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ),
+    url("https://cdn.corenexis.com/f/cB4h8qux3E2.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+#reviews h1{
+    color: #FFD700;
+    margin-bottom: 15px;
+}
+
+.rating{
+    font-size: 40px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+textarea{
+    width: 80%;
+    max-width: 600px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 15px;
+}
+
+button{
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #FFD700;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.review-box{
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 15px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 10px;
+}
+</style>
+</head>
+<body>
+
+<!-- Welcome Page -->
+<section id="welcome">
+    <div class="welcome-box">
+        <h1>Welcome</h1>
+        <h1>Islamic Knowledge and Heritage</h1>
+
+<p>
+    Explore the beauty of Islam, its teachings,
+    holy books, pillars, and famous Islamic places.
+</p>
+
+<a href="#about" class="btn">Get Started</a>
+    </div>
+</section>
+<!-- About Islam Page -->
+<section id="about">
+    <div class="about-box">
+
+        <h1>About Islam</h1>
+
+        <p>
+            Islam is one of the world's major religions. It teaches peace,
+            kindness, honesty, and respect for others. Muslims believe in one
+            God called Allah. The Holy Quran is the sacred book of Islam.
+            Muslims follow the teachings of Prophet Muhammad ﷺ and strive to
+            live a good life. Islam encourages helping the poor, speaking the
+            truth, respecting parents, and treating everyone fairly.
+        </p>
+
+        <br>
+
+        <p>
+            اسلام دنیا کے بڑے مذاہب میں سے ایک ہے۔ یہ امن، محبت،
+            دیانت داری اور دوسروں کے احترام کا درس دیتا ہے۔ مسلمان
+            ایک خدا یعنی اللہ پر ایمان رکھتے ہیں۔ قرآنِ مجید اسلام
+            کی مقدس کتاب ہے۔ مسلمان حضرت محمد ﷺ کی تعلیمات پر عمل
+            کرتے ہیں۔ اسلام غریبوں کی مدد کرنے، سچ بولنے، والدین کا
+            احترام کرنے اور انصاف کرنے کی تعلیم دیتا ہے۔
+        </p>
+
+    </div>
+</section>
+<section id="pillars">
+    <h1>The Five Pillars of Islam | اسلام کے پانچ ارکان</h1>
+
+    <div class="pillar">
+        <h2>1. Shahadah (Faith) - شہادت</h2>
+        <p><b>English:</b> Belief in One Allah and Prophet Muhammad ﷺ as His Messenger.</p>
+        <p><b>اردو:</b> ایک اللہ پر ایمان اور حضرت محمد ﷺ کو اللہ کا آخری رسول ماننا۔</p>
+    </div>
+
+    <div class="pillar">
+        <h2>2. Salah (Prayer) - نماز</h2>
+        <p><b>English:</b> Muslims perform five daily prayers to worship Allah.</p>
+        <p><b>اردو:</b> مسلمان اللہ کی عبادت کے لیے روزانہ پانچ وقت نماز ادا کرتے ہیں۔</p>
+    </div>
+
+    <div class="pillar">
+        <h2>3. Zakat (Charity) - زکوٰۃ</h2>
+        <p><b>English:</b> Muslims give charity to help poor and needy people.</p>
+        <p><b>اردو:</b> مسلمان غریب اور ضرورت مند لوگوں کی مدد کے لیے زکوٰۃ دیتے ہیں۔</p>
+    </div>
+
+    <div class="pillar">
+        <h2>4. Sawm (Fasting) - روزہ</h2>
+        <p><b>English:</b> Muslims fast during the holy month of Ramadan.</p>
+        <p><b>اردو:</b> مسلمان رمضان المبارک کے مہینے میں روزے رکھتے ہیں۔</p>
+    </div>
+
+    <div class="pillar">
+        <h2>5. Hajj (Pilgrimage) - حج</h2>
+        <p><b>English:</b> Muslims perform Hajj in Makkah at least once in their lifetime if they are able.</p>
+        <p><b>اردو:</b> اگر استطاعت ہو تو مسلمان زندگی میں کم از کم ایک بار مکہ مکرمہ جا کر حج ادا کرتے ہیں۔</p>
+    </div>
+</section>
+<section id="holy-books">
+
+    <h1>The Four Holy Books of Islam | اسلام کی چار آسمانی کتابیں</h1>
+
+    <div class="book">
+        <h2>1. Taurat (Torah) | تورات</h2>
+        <p>
+            <b>English:</b> Taurat was revealed by Allah to Prophet Musa (AS). It contained guidance and laws for his people.
+        </p>
+        <p>
+            <b>اردو:</b> تورات اللہ تعالیٰ کی طرف سے حضرت موسیٰؑ پر نازل کی گئی۔ اس میں ان کی قوم کے لیے ہدایات اور احکامات موجود تھے۔
+        </p>
+    </div>
+
+    <div class="book">
+        <h2>2. Zabur (Psalms) | زبور</h2>
+        <p>
+            <b>English:</b> Zabur was revealed to Prophet Dawood (AS). It contained prayers, wisdom, and praises of Allah.
+        </p>
+        <p>
+            <b>اردو:</b> زبور حضرت داؤدؑ پر نازل کی گئی۔ اس میں دعائیں، حکمت اور اللہ تعالیٰ کی حمد شامل تھی۔
+        </p>
+    </div>
+
+    <div class="book">
+        <h2>3. Injil (Gospel) | انجیل</h2>
+        <p>
+            <b>English:</b> Injil was revealed to Prophet Isa (AS). It guided people towards righteousness and obedience to Allah.
+        </p>
+        <p>
+            <b>اردو:</b> انجیل حضرت عیسیٰؑ پر نازل کی گئی۔ یہ لوگوں کو نیکی اور اللہ تعالیٰ کی اطاعت کی طرف رہنمائی دیتی تھی۔
+        </p>
+    </div>
+
+    <div class="book">
+        <h2>4. Holy Quran | قرآنِ مجید</h2>
+        <p>
+            <b>English:</b> The Holy Quran is the final and most important holy book of Islam. It was revealed to Prophet Muhammad ﷺ through Angel Jibreel (AS). The Quran contains complete guidance for humanity and teaches faith, worship, morality, justice, and kindness. Muslims believe it is the final message of Allah and remains unchanged.
+        </p>
+        <p>
+            <b>اردو:</b> قرآنِ مجید اسلام کی آخری اور سب سے اہم آسمانی کتاب ہے۔ یہ حضرت محمد ﷺ پر حضرت جبرائیلؑ کے ذریعے نازل کی گئی۔ قرآنِ مجید انسانیت کے لیے مکمل رہنمائی فراہم کرتا ہے اور ایمان، عبادات، اخلاق، انصاف اور رحم کی تعلیم دیتا ہے۔ مسلمان ایمان رکھتے ہیں کہ یہ اللہ تعالیٰ کا آخری اور محفوظ پیغام ہے۔
+        </p>
+    </div>
+<section id="prophets">
+
+    <h1>Prophets in Islam | انبیاء کرامؑ</h1>
+
+    <div class="prophet">
+        <h2>1. Hazrat Adam (AS) | حضرت آدمؑ</h2>
+        <p><b>English:</b> Hazrat Adam (AS) was the first Prophet and the first human being.</p>
+        <p><b>اردو:</b> حضرت آدمؑ پہلے نبی اور پہلے انسان تھے۔</p>
+    </div>
+
+    <div class="prophet">
+        <h2>2. Hazrat Nuh (AS) | حضرت نوحؑ</h2>
+        <p><b>English:</b> Hazrat Nuh (AS) preached the message of Allah to his people for many years.</p>
+        <p><b>اردو:</b> حضرت نوحؑ نے کئی سال تک اپنی قوم کو اللہ کا پیغام پہنچایا۔</p>
+    </div>
+
+    <div class="prophet">
+        <h2>3. Hazrat Ibrahim (AS) | حضرت ابراہیمؑ</h2>
+        <p><b>English:</b> Hazrat Ibrahim (AS) is known as the Friend of Allah.</p>
+        <p><b>اردو:</b> حضرت ابراہیمؑ کو خلیل اللہ کہا جاتا ہے۔</p>
+    </div>
+
+    <div class="prophet">
+        <h2>4. Hazrat Ismail (AS) | حضرت اسماعیلؑ</h2>
+        <p><b>English:</b> Hazrat Ismail (AS) was the son of Hazrat Ibrahim (AS).</p>
+        <p><b>اردو:</b> حضرت اسماعیلؑ حضرت ابراہیمؑ کے بیٹے تھے۔</p>
+    </div>
+
+    <div class="prophet">
+        <h2>5. Hazrat Yusuf (AS) | حضرت یوسفؑ</h2>
+        <p><b>English:</b> Hazrat Yusuf (AS) is famous for his wisdom, patience, and honesty.</p>
+        <p><b>اردو:</b> حضرت یوسفؑ اپنی حکمت، صبر اور سچائی کے لیے مشہور ہیں۔</p>
+    </div>
+
+    <div class="prophet">
+        <h2>6. Hazrat Musa (AS) | حضرت موسیٰؑ</h2>
+        <p><b>English:</b> Hazrat Musa (AS) received the Taurat from Allah.</p>
+        <p><b>اردو:</b> حضرت موسیٰؑ پر اللہ تعالیٰ نے تورات نازل فرمائی۔</p>
+    </div>
+
+    <div class="prophet">
+        <h2>7. Hazrat Dawood (AS) | حضرت داؤدؑ</h2>
+        <p><b>English:</b> Hazrat Dawood (AS) received the Zabur from Allah.</p>
+        <p><b>اردو:</b> حضرت داؤدؑ پر اللہ تعالیٰ نے زبور نازل فرمائی۔</p>
+    </div>
+
+    <div class="prophet">
+        <h2>8. Hazrat Sulaiman (AS) | حضرت سلیمانؑ</h2>
+        <p><b>English:</b> Hazrat Sulaiman (AS) was blessed with wisdom and a great kingdom.</p>
+        <p><b>اردو:</b> حضرت سلیمانؑ کو اللہ تعالیٰ نے حکمت اور عظیم سلطنت عطا فرمائی۔</p>
+    </div>
+
+    <div class="prophet">
+        <h2>9. Hazrat Isa (AS) | حضرت عیسیٰؑ</h2>
+        <p><b>English:</b> Hazrat Isa (AS) received the Injil from Allah.</p>
+        <p><b>اردو:</b> حضرت عیسیٰؑ پر اللہ تعالیٰ نے انجیل نازل فرمائی۔</p>
+    </div>
+
+    <div class="prophet">
+        <h2>10. Prophet Muhammad ﷺ | حضرت محمد ﷺ</h2>
+        <p><b>English:</b> Prophet Muhammad ﷺ is the final Prophet of Islam. The Holy Quran was revealed to him through Angel Jibreel (AS). He taught humanity kindness, justice, honesty, and mercy.</p>
+        <p><b>اردو:</b> حضرت محمد ﷺ اسلام کے آخری نبی ہیں۔ آپ ﷺ پر حضرت جبرائیلؑ کے ذریعے قرآنِ مجید نازل کیا گیا۔ آپ ﷺ نے انسانیت کو رحم، انصاف، سچائی اور اچھے اخلاق کی تعلیم دی۔</p>
+    </div>
+<section id="places">
+
+    <h1>Famous Islamic Places in the World</h1>
+
+    <p class="intro">
+        Islamic holy places are visited by millions of Muslims every year.
+        These places have great religious, historical, and cultural importance
+        in Islam and are respected by Muslims around the world.
+    </p>
+
+</section>
+<div class="place">
+
+    <h2>1. Masjid al-Haram (Makkah, Saudi Arabia)</h2>
+
+   <img src="https://images.unsplash.com/photo-1577889933775-33b8571874c4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    <p>
+        <b>English:</b> Masjid al-Haram is the holiest mosque in Islam.
+        It surrounds the Holy Kaaba and welcomes millions of pilgrims
+        every year for Hajj and Umrah.
+    </p>
+
+    <p>
+        <b>اردو:</b> مسجد الحرام اسلام کی سب سے مقدس مسجد ہے۔
+        اس کے مرکز میں خانہ کعبہ واقع ہے اور ہر سال لاکھوں مسلمان
+        حج اور عمرہ کی ادائیگی کے لیے یہاں آتے ہیں۔
+    </p>
+
+</div>
+<div class="place">
+
+    <h2>2. Al-Masjid an-Nabawi (Madinah, Saudi Arabia)</h2>
+
+<img src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+
+    <p>
+        <b>English:</b> Al-Masjid an-Nabawi is one of the holiest mosques in Islam.
+        It was built by Prophet Muhammad ﷺ in Madinah. The mosque is famous for
+        its beautiful green dome and peaceful atmosphere. Millions of Muslims visit
+        this sacred place every year to offer prayers and pay their respects.
+    </p>
+
+    <p>
+        <b>اردو:</b> مسجد نبوی ﷺ اسلام کی مقدس ترین مساجد میں سے ایک ہے۔
+        یہ مدینہ منورہ میں واقع ہے اور حضرت محمد ﷺ نے اس کی بنیاد رکھی۔
+        یہ مسجد اپنے خوبصورت سبز گنبد اور روحانی ماحول کی وجہ سے مشہور ہے۔
+        ہر سال لاکھوں مسلمان یہاں نماز ادا کرنے اور زیارت کے لیے آتے ہیں۔
+    </p>
+
+</div>
+<div class="place">
+
+    <h2>2. Al-Masjid an-Nabawi (Madinah, Saudi Arabia)</h2>
+
+    <img src="https://images.unsplash.com/photo-1629937060403-b3021d9f5410?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+
+    <p>
+        <b>English:</b> Al-Masjid an-Nabawi is one of the holiest mosques in Islam.
+        It was built by Prophet Muhammad ﷺ in Madinah. The mosque is famous for
+        its beautiful green dome and peaceful atmosphere. Millions of Muslims visit
+        this sacred place every year to offer prayers and pay their respects.
+    </p>
+
+    <p>
+        <b>اردو:</b> مسجد نبوی ﷺ اسلام کی مقدس ترین مساجد میں سے ایک ہے۔
+        یہ مدینہ منورہ میں واقع ہے اور حضرت محمد ﷺ نے اس کی بنیاد رکھی۔
+        یہ مسجد اپنے خوبصورت سبز گنبد اور روحانی ماحول کی وجہ سے مشہور ہے۔
+        ہر سال لاکھوں مسلمان یہاں نماز ادا کرنے اور زیارت کے لیے آتے ہیں۔
+    </p>
+
+</div>
+<!-- 4. Karbala -->
+
+<div class="place">
+
+    <h2>4. Karbala (Iraq)</h2>
+<img src="https://images.unsplash.com/photo-1718680962024-0fa899e1815e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+
+    <p>
+        <b>English:</b> Karbala is one of the most important Islamic cities.
+        It is known for the historic Battle of Karbala and is visited by millions
+        of Muslims every year. The city holds great spiritual and historical
+        significance in Islamic history.
+    </p>
+
+    <p>
+        <b>اردو:</b> کربلا اسلامی تاریخ کا ایک نہایت اہم شہر ہے۔
+        یہ واقعۂ کربلا کی وجہ سے مشہور ہے اور ہر سال لاکھوں مسلمان
+        یہاں زیارت کے لیے آتے ہیں۔ اس شہر کو اسلامی تاریخ میں عظیم
+        روحانی اور تاریخی اہمیت حاصل ہے۔
+    </p>
+
+</div>
+
+
+<!-- 5. Imam Hussain Shrine -->
+
+<div class="place">
+
+    <h2>5. Imam Hussain Shrine (Karbala, Iraq)</h2>
+
+    <img src=https://images.unsplash.com/photo-1711594937687-eed59068e043?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    <p>
+        <b>English:</b> The Imam Hussain Shrine is one of the most visited Islamic
+        shrines in the world. It is the resting place of Imam Hussain (RA), the
+        grandson of Prophet Muhammad ﷺ.
+    </p>
+
+    <p>
+        <b>اردو:</b> روضۂ امام حسینؓ دنیا کے مشہور اسلامی مزارات میں سے ایک ہے۔
+        یہ حضرت امام حسینؓ کا مزار ہے جو حضرت محمد ﷺ کے نواسے تھے۔
+    </p>
+
+</div>
+
+
+<!-- 6. Al-Abbas Shrine -->
+
+<div class="place">
+
+    <h2>6. Al-Abbas Shrine (Karbala, Iraq)</h2>
+
+    <img src="https://media.istockphoto.com/id/1445164215/photo/the-internal-view-of-holy-shrine-of-imam-hussein-and-holy-shrine-or-abu-fadhl-al-abbas-in.jpg?s=1024x1024&w=is&k=20&c=TXu8DoOZutmp-ueHNIYoneZvtWN7ryHHY-sWdhf38JA=" alt="Al-Abbas Shrine">
+
+    <p>
+        <b>English:</b> The Al-Abbas Shrine is dedicated to Hazrat Abbas (RA),
+        the brother of Imam Hussain (RA). It is a beautiful and respected Islamic
+        site visited by millions of pilgrims every year.
+    </p>
+
+    <p>
+        <b>اردو:</b> روضۂ حضرت عباسؓ حضرت عباسؓ سے منسوب ہے جو امام حسینؓ
+        کے بھائی تھے۔ یہ ایک خوبصورت اور قابلِ احترام اسلامی مقام ہے
+        جہاں ہر سال لاکھوں زائرین آتے ہیں۔
+    </p>
+
+</div>
+<!-- 7. Quba Mosque -->
+
+<div class="place">
+
+    <h2>7. Quba Mosque (Madinah, Saudi Arabia)</h2>
+
+    <img src="https://plus.unsplash.com/premium_photo-1697730012360-d49e7ca1a776?q=80&w=1192&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Quba Mosque">
+
+
+
+    <p>
+        <b>English:</b> Quba Mosque is the first mosque built in Islamic history.
+        It was established by Prophet Muhammad ﷺ after his migration to Madinah.
+        The mosque is highly respected and visited by Muslims from around the world.
+    </p>
+
+    <p>
+        <b>اردو:</b> مسجد قباء اسلام کی تاریخ کی پہلی مسجد ہے۔
+        اس کی بنیاد حضرت محمد ﷺ نے مدینہ منورہ ہجرت کے بعد رکھی۔
+        یہ مسجد مسلمانوں کے لیے بہت اہم اور قابلِ احترام مقام ہے۔
+    </p>
+
+</div>
+
+
+<!-- 8. Sheikh Zayed Grand Mosque -->
+
+<div class="place">
+
+    <h2>8. Sheikh Zayed Grand Mosque (Abu Dhabi, UAE)</h2>
+
+   <img src="https://images.unsplash.com/photo-1590273089302-ebbc53986b6e?q=80&w=758&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sheikh Zayed Grand Mosque">
+
+    <p>
+        <b>English:</b> Sheikh Zayed Grand Mosque is one of the largest and most
+        beautiful mosques in the world. It is famous for its stunning architecture,
+        white marble design, and magnificent domes.
+    </p>
+
+    <p>
+        <b>اردو:</b> شیخ زاید گرینڈ مسجد دنیا کی سب سے بڑی اور خوبصورت
+        مساجد میں سے ایک ہے۔ یہ اپنی شاندار تعمیر، سفید سنگِ مرمر اور
+        خوبصورت گنبدوں کی وجہ سے مشہور ہے۔
+    </p>
+
+</div>
+
+
+<!-- 9. Sultan Ahmed Mosque -->
+
+<div class="place">
+
+    <h2>9. Sultan Ahmed Mosque (Istanbul, Turkey)</h2>
+
+    <img src="https://images.unsplash.com/photo-1691446930608-98466a4bdd0f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sultan Ahmed Mosque">
+
+
+    <p>
+        <b>English:</b> Sultan Ahmed Mosque, also known as the Blue Mosque,
+        is one of the most famous landmarks in Turkey. It is admired for its
+        beautiful blue tiles, large domes, and elegant minarets.
+    </p>
+
+    <p>
+        <b>اردو:</b> سلطان احمد مسجد، جسے بلیو مسجد بھی کہا جاتا ہے،
+        ترکی کے مشہور ترین مقامات میں سے ایک ہے۔ یہ اپنی نیلی ٹائلوں،
+        بڑے گنبدوں اور خوبصورت میناروں کی وجہ سے مشہور ہے۔
+    </p>
+
+</div>
+<!-- 10. Badshahi Mosque -->
+
+<div class="place">
+
+    <h2>10. Badshahi Mosque (Lahore, Pakistan)</h2>
+
+   
+<img src="https://images.unsplash.com/photo-1692993740140-b1985dc7c761?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Badshahi Mosque">
+
+    <p>
+        <b>English:</b> Badshahi Mosque is one of the largest and most beautiful
+        mosques in Pakistan. It was built during the Mughal era and is famous
+        for its magnificent architecture and historical importance.
+    </p>
+
+    <p>
+        <b>اردو:</b> بادشاہی مسجد پاکستان کی سب سے بڑی اور خوبصورت مساجد
+        میں سے ایک ہے۔ یہ مغلیہ دور میں تعمیر کی گئی تھی اور اپنی شاندار
+        تعمیر اور تاریخی اہمیت کی وجہ سے مشہور ہے۔
+    </p>
+
+</div>
+
+
+<!-- 11. Faisal Mosque -->
+
+<div class="place">
+
+    <h2>11. Faisal Mosque (Islamabad, Pakistan)</h2>
+
+    <img src="https://plus.unsplash.com/premium_photo-1697729758639-d692c36557b2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Faisal Mosque">
+
+    <p>
+        <b>English:</b> Faisal Mosque is the national mosque of Pakistan.
+        It is famous for its unique modern design inspired by a desert tent.
+        The mosque is one of the most recognizable landmarks of Islamabad.
+    </p>
+
+    <p>
+        <b>اردو:</b> فیصل مسجد پاکستان کی قومی مسجد ہے۔ یہ اپنے منفرد
+        جدید طرزِ تعمیر کی وجہ سے مشہور ہے جو ایک خیمے سے مشابہت رکھتا ہے۔
+        یہ اسلام آباد کی نمایاں ترین عمارتوں میں شمار ہوتی ہے۔
+    </p>
+
+</div>
+
+
+<!-- 12. Umayyad Mosque -->
+
+<div class="place">
+
+    <h2>12. Umayyad Mosque (Damascus, Syria)</h2>
+
+    <img src="https://plus.unsplash.com/premium_photo-1697729983853-73d61f1c446f?q=80&w=1120&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Umayyad Mosque">
+
+
+    <p>
+        <b>English:</b> The Umayyad Mosque is one of the oldest and most important
+        mosques in the Islamic world. Located in Damascus, Syria, it is known
+        for its rich history, beautiful architecture, and cultural significance.
+    </p>
+
+    <p>
+        <b>اردو:</b> جامع اموی دنیا کی قدیم ترین اور اہم اسلامی مساجد میں
+        سے ایک ہے۔ یہ دمشق، شام میں واقع ہے اور اپنی تاریخی اہمیت،
+        خوبصورت تعمیر اور اسلامی ثقافت سے تعلق کی وجہ سے مشہور ہے۔
+    </p>
+<section id="festivals">
+
+    <h1>Islamic Festivals | اسلامی تہوار</h1>
+
+    <div class="festival">
+        <h2>1. Ramadan | رمضان المبارک</h2>
+        <p><b>English:</b> Ramadan is the ninth month of the Islamic calendar. Muslims fast from dawn to sunset, increase their prayers, read the Quran, and seek the mercy of Allah.</p>
+        <p><b>اردو:</b> رمضان اسلامی سال کا نواں مہینہ ہے۔ مسلمان اس مہینے میں روزے رکھتے ہیں، قرآنِ مجید کی تلاوت کرتے ہیں، عبادت میں اضافہ کرتے ہیں اور اللہ تعالیٰ کی رحمت حاصل کرنے کی کوشش کرتے ہیں۔</p>
+    </div>
+
+    <div class="festival">
+        <h2>2. Eid-ul-Fitr | عید الفطر</h2>
+        <p><b>English:</b> Eid-ul-Fitr is celebrated at the end of Ramadan. Muslims offer Eid prayers, visit relatives and friends, and thank Allah for His blessings.</p>
+        <p><b>اردو:</b> عید الفطر رمضان المبارک کے اختتام پر منائی جاتی ہے۔ مسلمان عید کی نماز ادا کرتے ہیں، رشتہ داروں اور دوستوں سے ملتے ہیں اور اللہ تعالیٰ کا شکر ادا کرتے ہیں۔</p>
+    </div>
+
+    <div class="festival">
+        <h2>3. Eid-ul-Adha | عید الاضحی</h2>
+        <p><b>English:</b> Eid-ul-Adha commemorates the sacrifice of Prophet Ibrahim (AS). Muslims perform Qurbani and share meat with family, friends, and people in need.</p>
+        <p><b>اردو:</b> عید الاضحی حضرت ابراہیمؑ کی قربانی کی یاد میں منائی جاتی ہے۔ مسلمان قربانی کرتے ہیں اور گوشت اہلِ خانہ، دوستوں اور ضرورت مند افراد میں تقسیم کرتے ہیں۔</p>
+    </div>
+
+    <div class="festival">
+        <h2>4. Ashura | عاشورہ</h2>
+        <p><b>English:</b> Ashura is observed on the 10th of Muharram. It is an important day in Islamic history and is remembered by Muslims around the world.</p>
+        <p><b>اردو:</b> عاشورہ محرم الحرام کی 10 تاریخ کو منایا جاتا ہے۔ یہ اسلامی تاریخ کا ایک اہم دن ہے جسے دنیا بھر کے مسلمان یاد رکھتے ہیں۔</p>
+    </div>
+
+    <div class="festival">
+        <h2>5. Laylat al-Qadr | شبِ قدر</h2>
+        <p><b>English:</b> Laylat al-Qadr is known as the Night of Power. It is believed to be the night when the Holy Quran was first revealed. Muslims spend this night in prayer and worship.</p>
+        <p><b>اردو:</b> شبِ قدر کو عظمت والی رات کہا جاتا ہے۔ اسی رات قرآنِ مجید کا نزول شروع ہوا۔ مسلمان اس رات عبادت، دعا اور ذکرِ الٰہی میں مشغول رہتے ہیں۔</p>
+    </div>
+
+    <div class="festival">
+        <h2>6. Mawlid al-Nabi ﷺ | عید میلاد النبی ﷺ</h2>
+        <p><b>English:</b> Mawlid al-Nabi ﷺ marks the birth of Prophet Muhammad ﷺ. Muslims remember his teachings, character, and contributions to humanity.</p>
+        <p><b>اردو:</b> عید میلاد النبی ﷺ حضرت محمد ﷺ کی ولادتِ مبارکہ کی یاد میں منائی جاتی ہے۔ مسلمان آپ ﷺ کی سیرت، تعلیمات اور انسانیت کے لیے خدمات کو یاد کرتے ہیں۔</p>
+    </div>
+<section id="months">
+
+    <h1>Islamic Months | اسلامی مہینے</h1>
+
+    <div class="month">
+        <h2>1. Muharram | محرم</h2>
+        <p><b>English:</b> Muharram is the first month of the Islamic calendar and one of the four sacred months.</p>
+        <p><b>اردو:</b> محرم اسلامی سال کا پہلا مہینہ ہے اور چار حرمت والے مہینوں میں سے ایک ہے۔</p>
+    </div>
+
+    <div class="month">
+        <h2>2. Safar | صفر</h2>
+        <p><b>English:</b> Safar is the second month of the Islamic calendar.</p>
+        <p><b>اردو:</b> صفر اسلامی سال کا دوسرا مہینہ ہے۔</p>
+    </div>
+
+    <div class="month">
+        <h2>3. Rabi-ul-Awwal | ربیع الاول</h2>
+        <p><b>English:</b> Rabi-ul-Awwal is the third Islamic month. It is widely known as the month in which Prophet Muhammad ﷺ was born.</p>
+        <p><b>اردو:</b> ربیع الاول اسلامی سال کا تیسرا مہینہ ہے۔ یہ حضرت محمد ﷺ کی ولادتِ مبارکہ کے حوالے سے مشہور ہے۔</p>
+    </div>
+
+    <div class="month">
+        <h2>4. Rabi-ul-Thani | ربیع الثانی</h2>
+        <p><b>English:</b> Rabi-ul-Thani is the fourth month of the Islamic calendar.</p>
+        <p><b>اردو:</b> ربیع الثانی اسلامی سال کا چوتھا مہینہ ہے۔</p>
+    </div>
+
+    <div class="month">
+        <h2>5. Jumada al-Awwal | جمادی الاول</h2>
+        <p><b>English:</b> Jumada al-Awwal is the fifth month of the Islamic calendar.</p>
+        <p><b>اردو:</b> جمادی الاول اسلامی سال کا پانچواں مہینہ ہے۔</p>
+    </div>
+
+    <div class="month">
+        <h2>6. Jumada al-Thani | جمادی الثانی</h2>
+        <p><b>English:</b> Jumada al-Thani is the sixth month of the Islamic calendar.</p>
+        <p><b>اردو:</b> جمادی الثانی اسلامی سال کا چھٹا مہینہ ہے۔</p>
+    </div>
+
+    <div class="month">
+        <h2>7. Rajab | رجب</h2>
+        <p><b>English:</b> Rajab is one of the four sacred months in Islam.</p>
+        <p><b>اردو:</b> رجب اسلام کے چار حرمت والے مہینوں میں سے ایک ہے۔</p>
+    </div>
+
+    <div class="month">
+        <h2>8. Shaban | شعبان</h2>
+        <p><b>English:</b> Shaban is the month before Ramadan and is known for increased worship.</p>
+        <p><b>اردو:</b> شعبان رمضان سے پہلے کا مہینہ ہے اور عبادت کی تیاری کا مہینہ سمجھا جاتا ہے۔</p>
+    </div>
+
+    <div class="month">
+        <h2>9. Ramadan | رمضان</h2>
+        <p><b>English:</b> Ramadan is the month of fasting, prayer, and the revelation of the Holy Quran.</p>
+        <p><b>اردو:</b> رمضان روزوں، عبادت اور قرآنِ مجید کے نزول کا بابرکت مہینہ ہے۔</p>
+    </div>
+
+    <div class="month">
+        <h2>10. Shawwal | شوال</h2>
+        <p><b>English:</b> Shawwal is the month in which Muslims celebrate Eid-ul-Fitr.</p>
+        <p><b>اردو:</b> شوال وہ مہینہ ہے جس میں مسلمان عید الفطر مناتے ہیں۔</p>
+    </div>
+
+    <div class="month">
+        <h2>11. Dhul-Qadah | ذوالقعدہ</h2>
+        <p><b>English:</b> Dhul-Qadah is one of the four sacred months in Islam.</p>
+        <p><b>اردو:</b> ذوالقعدہ اسلام کے چار حرمت والے مہینوں میں سے ایک ہے۔</p>
+    </div>
+
+    <div class="month">
+        <h2>12. Dhul-Hijjah | ذوالحجہ</h2>
+        <p><b>English:</b> Dhul-Hijjah is the month of Hajj and Eid-ul-Adha. It is one of the holiest months in Islam.</p>
+        <p><b>اردو:</b> ذوالحجہ حج اور عید الاضحی کا مہینہ ہے اور اسلام کے مقدس ترین مہینوں میں شمار ہوتا ہے۔</p>
+    </div>
+</section>
+<section id="quotes">
+
+    <h1>Islamic Quotes | اسلامی اقوال</h1>
+
+    <div class="quote">
+        <p>"Indeed, Allah is with the patient."</p>
+        <p><b>بے شک اللہ صبر کرنے والوں کے ساتھ ہے۔</b></p>
+    </div>
+
+    <div class="quote">
+        <p>"And speak to people kindly."</p>
+        <p><b>اور لوگوں سے بھلائی کی بات کرو۔</b></p>
+    </div>
+
+    <div class="quote">
+        <p>"The best among you are those who have the best manners."</p>
+        <p><b>تم میں بہترین وہ ہیں جن کے اخلاق بہترین ہیں۔</b></p>
+    </div>
+
+    <div class="quote">
+        <p>"Allah loves those who do good."</p>
+        <p><b>اللہ نیکی کرنے والوں سے محبت کرتا ہے۔</b></p>
+    </div>
+
+    <div class="quote">
+        <p>"Verily, with hardship comes ease."</p>
+        <p><b>بے شک ہر مشکل کے ساتھ آسانی ہے۔</b></p>
+    </div>
+
+    <div class="quote">
+        <p>"The strongest person is the one who controls anger."</p>
+        <p><b>سب سے طاقتور وہ ہے جو اپنے غصے پر قابو رکھے۔</b></p>
+    </div>
+
+    <div class="quote">
+        <p>"Seek knowledge from the cradle to the grave."</p>
+        <p><b>گہوارے سے لے کر قبر تک علم حاصل کرو۔</b></p>
+    </div>
+
+    <div class="quote">
+        <p>"Allah does not burden a soul beyond what it can bear."</p>
+        <p><b>اللہ کسی جان پر اس کی طاقت سے زیادہ بوجھ نہیں ڈالتا۔</b></p>
+    </div>
+</section>
+<section>
+<footer id="footer">
+
+    <h3>Islamic Knowledge and Heritage</h3>
+
+    <p>
+        This website is dedicated to sharing knowledge about Islam,
+        including its history, teachings, holy books, prophets,
+        festivals, and famous Islamic places around the world.
+    </p>
+
+    <p>
+        © 2026 Islamic Knowledge and Heritage | All Rights Reserved
+    </p>
+
+</footer>
+</section>
+<section id="thankyou">
+
+    <h1>Thank You for Visiting</h1>
+
+    <p>
+        Thank you for taking the time to explore our website.
+        We hope you enjoyed learning about Islam, its teachings,
+        holy books, prophets, festivals, and sacred places.
+    </p>
+
+    <p>
+        Our goal is to share knowledge, promote understanding,
+        and highlight the beauty of Islamic heritage.
+    </p>
+
+    <p>
+        May peace, happiness, and blessings be with you always.
+    </p>
+
+    <h2>JazakAllah Khair</h2>
+
+</section>
+<section id="reviews">
+
+    <h1>How Did You Like My Website?</h1>
+    <p>Rate this website and leave your review below.</p>
+
+    <div class="rating">
+        <span onclick="rate(1)">⭐</span>
+        <span onclick="rate(2)">⭐</span>
+        <span onclick="rate(3)">⭐</span>
+        <span onclick="rate(4)">⭐</span>
+        <span onclick="rate(5)">⭐</span>
+    </div>
+
+    <p id="selected-rating">Your Rating: 0 Stars</p>
+
+    <textarea id="reviewText" placeholder="Write your review here..."></textarea>
+
+    <button onclick="addReview()">Submit Review</button>
+
+    <h2>Visitor Reviews</h2>
+    <div id="reviewList"></div>
+
+</section>
+
+<div class="rating">
+    <span class="star" onclick="rate(1)">★</span>
+    <span class="star" onclick="rate(2)">★</span>
+    <span class="star" onclick="rate(3)">★</span>
+    <span class="star" onclick="rate(4)">★</span>
+    <span class="star" onclick="rate(5)">★</span>
+</div>
+
+<p id="ratingText">Your Rating: 0 Stars</p>
+
+<script>
+function rate(num){
+
+    document.getElementById("ratingText").innerHTML =
+    "Your Rating: " + num + " Stars";
+
+    let stars = document.querySelectorAll(".star");
+
+    stars.forEach((star,index)=>{
+        if(index < num){
+            star.style.color = "gold";
+        }else{
+            star.style.color = "white";
+        }
+    });
+}
+</script></body>
+</html>
